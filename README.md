@@ -1,18 +1,15 @@
-# Lung Cancer Prediction App
+# Lung Cancer Prediction Web Application
 
-## Directory Tree Map
-.
-├── Notebook
-│   └── main.ipynb
-├── README.md
-├── data
-│   ├── Lung Cancer archive.zip
-│   └── survey lung cancer.csv
-└── models
-    ├── LogisticRegressionModel.pkl
-    ├── RandomForestModel.pkl
-    └── SGDClassificationModel.pkl
+## Repository Path's
 
-4 directories, 7 files
-
+- `README.md`
+- `Notebook`
+    - main.ipynb
+- `data`
+    - Lung Cancer archive.zip
+    - survey lung cancer.csv
+- `models`
+    - LogisticRegressionModel.pkl
+    - RandomForestModel.pkl
+    - SGDClassificationModel.pkl
 
