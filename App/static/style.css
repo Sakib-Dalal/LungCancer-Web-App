@@ -1,4 +1,53 @@
-html{
-    background-color: green;
-    color: red;
+html {
+  background-color: black;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+}
+
+.maincontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr 80px;  
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+
+.mainheading {
+  font-family: "Pacifico", serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* background-color: rgb(185, 175, 233); */
+
+  /* From https://css.glass */
+  background: rgba(227, 33, 220, 0.213);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(111, 78, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(111, 78, 255, 0.3);
+
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px; 
+  padding-bottom: 50px; 
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+
+}
+
+.maincontent {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(250, 128, 114);
+  padding: 50px;
+  /* border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px; */
+}
+
+.mainfoot {
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: rgba(252, 50, 50, 0.849);
+  text-align: start;
+  padding: 20px;
 }
