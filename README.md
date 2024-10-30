@@ -6,7 +6,7 @@ Users should not rely on the results of this app for making medical decisions.<b
 
 ## How To Setup
 #### Use Environment 
-1. We need to use `./env` setup folder to setup this tool
+1. We need to use `./env` setup folder to setup this web app. 
 2. Requirement's: You need to have Anaconda or Miniconda navigator to be installed in your system.
 3. use this command to activate environment 
     - `conda activate ./env`
