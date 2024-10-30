@@ -1,0 +1,13 @@
+prefix=/Users/sakibdalal/Downloads/Lung-Cancer-Prediction/env
+exec_prefix=/Users/sakibdalal/Downloads/Lung-Cancer-Prediction/env
+libdir=/Users/sakibdalal/Downloads/Lung-Cancer-Prediction/env/lib
+sharedlibdir=/Users/sakibdalal/Downloads/Lung-Cancer-Prediction/env/lib
+includedir=/Users/sakibdalal/Downloads/Lung-Cancer-Prediction/env/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

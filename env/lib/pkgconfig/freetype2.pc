@@ -1,0 +1,14 @@
+prefix=/Users/sakibdalal/Downloads/Lung-Cancer-Prediction/env
+exec_prefix=/Users/sakibdalal/Downloads/Lung-Cancer-Prediction/env
+libdir=/Users/sakibdalal/Downloads/Lung-Cancer-Prediction/env/lib
+includedir=/Users/sakibdalal/Downloads/Lung-Cancer-Prediction/env/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 24.3.18
+Requires: 
+Requires.private: 
+Libs: -L/Users/sakibdalal/Downloads/Lung-Cancer-Prediction/env/lib -lfreetype
+Libs.private: -lz -L/Users/sakibdalal/Downloads/Lung-Cancer-Prediction/env/lib -lpng16 -lz
+Cflags: -I${includedir}/freetype2
