@@ -1,7 +1,5 @@
 from flask import Flask, render_template, request
 import pickle as pkl
-# from sklearn.ensemble import RandomForestClassifier
-import numpy as np
 
 
 # Flask App Here
@@ -50,12 +48,12 @@ def predict():
         data = getData()
         output = int(modelPredict(data)[0])
         if output == 1:
-            return "<h1>You have lung cancer</h1>"
+            return render_template('predict.html', prediction="You may have Cancer 😔.")
         else:
-            return "<h1>You don't have lung cancer</h1>"
+            return render_template('predict.html', prediction="You may not have Cancer 🙂.")
     except ValueError:
-        return render_template("index.html") 
+        return render_template("none.html") 
    
 
 if __name__ == "__main__":
-    app.run(debug=True, port="80", host="0.0.0.0")
+    app.run(debug=False, port="80", host="0.0.0.0")
