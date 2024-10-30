@@ -18,22 +18,115 @@
         <h1>Lung Cancer Prediction Web App 🫁</h1>
       </div>
       <div class="maincontent">
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        <form method="POST" action="{{ url_for('predict') }}">
+          <p>Select Gender: </p>
+          <select name="gender" class="form-select mb-4" aria-label="Default select example">
+            <option selected>None</option>
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+          </select>
+        
+
+          <p>Enter Your Age:</p>
+          <div class="form-floating mb-3">
+            <input name="age" type="number" class="form-control" id="floatingInput" placeholder="name@example.com" style="color: black;" min="1" max="120">
+            <label for="floatingInput" style="color: black;">Age</label>
           </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+
+          <p>Select you <a href="https://en.wikipedia.org/wiki/Smoking">Smoke</a> or not:</p>
+          <select name="smoke" class="form-select mb-4" aria-label="Default select example">
+            <option selected>None</option>
+            <option value="2">Yes</option>
+            <option value="1">No</option>
+          </select>
+
+        <p>Select you had <a href="https://en.wikipedia.org/wiki/Raynaud_syndrome">Yellow Fingers</a> or not:</p>
+        <select name="yellow_finger" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you had <a href="https://en.wikipedia.org/wiki/Anxiety">Anxiety</a> or not:</p>
+        <select name="anxiety" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you had <a href="">Peer Pressure</a> or not:</p>
+        <select name="peer_pressure" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you had <a href="https://en.wikipedia.org/wiki/Chronic_condition">Chronic Disease</a> or not:</p>
+        <select name="chronic_disease" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you had <a href="https://www.verywellhealth.com/fatigue-symptoms-causes-diagnosis-and-treatment-4768481">Fatigue</a> or not:</p>
+        <select name="fatigue" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you had <a href="https://en.wikipedia.org/wiki/Allergy">Allergy</a> or not:</p>
+        <select name="allergy" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you had <a href="https://www.msdmanuals.com/home/lung-and-airway-disorders/symptoms-of-lung-disorders/wheezing?ruleredirectid=743#Causes_v1669911">Wheezing</a> or not:</p>
+        <select name="wheezing" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you consume Alcohol or not:</p>
+        <select name="alcohol" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you had Cough or not:</p>
+        <select name="cough" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you had Shortness in Breath or not:</p>
+        <select name="shortness_in_breath" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you had Swallowing Difficulty or not:</p>
+        <select name="swallowing" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <p>Select you had Chest Pain or not:</p>
+        <select name="chest_pain" class="form-select mb-4" aria-label="Default select example">
+          <option selected>None</option>
+          <option value="2">Yes</option>
+          <option value="1">No</option>
+        </select>
+
+        <button type="submit" class="mainbutton">Predict 😖</button>
         </form>
+
       </div>
       <div class="mainfoot" role="alert">
         Not to take seriously
